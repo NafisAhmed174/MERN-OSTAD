@@ -70,7 +70,23 @@ function sortArray(ar){
 //8) Write a function named ‘capitalizeFirstLetter’ that takes a string and returns the same string with the first letter capitalized. Ex-  console.log(capitalizeFirstLetter("hello"));  // Output:  "Hello"
 
 function capitalizeFirstLetter(str){
-    if(str[0] < 'A') str[0] += 32;
+    
+    if(str[0] >= 'a'){
+        newStr = "";
+        newStr += str[0];
+        newStr = newStr.toUpperCase();
+        str = newStr + str.slice(1);
+    }
     return str;
 }
 
+// Testing 
+
+console.log(calculateSum(5, 6));
+console.log(isEven(10));
+console.log(findMax([3, 2, 5, 4]));
+console.log(reverseString("Nafis Ahmed"));
+console.log(filterOddNumbers([1, 2, 3, 4, 5]));
+console.log(sumArray([3, 2, 5, 4]));
+console.log(sortArray([3, 2, 5, 4]));
+console.log(capitalizeFirstLetter("nafis Ahmed"));
