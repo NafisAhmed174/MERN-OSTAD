@@ -59,3 +59,10 @@ function sumArray(ar){
 
     return sum;
 }
+
+//7) Write a function named ‘sortArray’ that takes an array of numbers and returns a new array sorted in ascending order.
+
+function sortArray(ar){
+    ar.sort();
+    return ar;
+}
