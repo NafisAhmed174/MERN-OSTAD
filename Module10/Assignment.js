@@ -9,3 +9,10 @@ function calculateSum(a, b){
 function isEven(a){
     return a % 2 == 0;
 }
+
+//3) Write a function named ‘findMax’ that takes an array of numbers and returns the largest number in the array.
+
+function findMax(ar){
+    return Math.max(...ar);
+}
+
