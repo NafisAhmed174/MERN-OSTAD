@@ -38,7 +38,7 @@ function reverseString(str){
 function filterOddNumbers(ar){
 
     let oddNumberArray = [];
-    
+
     for(let i = 0; i < ar.length; i++){
         if(ar[i] & 1){
             oddNumberArray.push(ar[i]);
@@ -46,4 +46,16 @@ function filterOddNumbers(ar){
     }
 
     return oddNumberArray;
+}
+
+//6) Write a function named ‘sumArray’ that takes an array of numbers and returns the sum of all elements.
+
+function sumArray(ar){
+    let sum = 0;
+
+    for(let i = 0; i < ar.length; i++){
+        sum += ar[i];
+    }
+
+    return sum;
 }
