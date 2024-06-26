@@ -32,3 +32,18 @@ function reverseString(str){
     }
     return revString;
 }
+
+//5) Write a function named ‘filterOddNumbers’ that takes an array of numbers and returns a new array containing only the odd numbers.
+
+function filterOddNumbers(ar){
+
+    let oddNumberArray = [];
+    
+    for(let i = 0; i < ar.length; i++){
+        if(ar[i] & 1){
+            oddNumberArray.push(ar[i]);
+        }
+    }
+
+    return oddNumberArray;
+}
