@@ -66,3 +66,11 @@ function sortArray(ar){
     ar.sort();
     return ar;
 }
+
+//8) Write a function named ‘capitalizeFirstLetter’ that takes a string and returns the same string with the first letter capitalized. Ex-  console.log(capitalizeFirstLetter("hello"));  // Output:  "Hello"
+
+function capitalizeFirstLetter(str){
+    if(str[0] < 'A') str[0] += 32;
+    return str;
+}
+
