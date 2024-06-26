@@ -13,6 +13,22 @@ function isEven(a){
 //3) Write a function named ‘findMax’ that takes an array of numbers and returns the largest number in the array.
 
 function findMax(ar){
-    return Math.max(...ar);
+    // return Math.max(...ar);
+    let mx = ar[0];
+    for(let i = 1; i < ar.length; i++){
+        if(mx < ar[i]){
+            mx = ar[i];
+        }
+    }
+    return mx;
 }
 
+//4) Write a function named ‘reverseString’ that takes a string and returns the string reversed.
+
+function reverseString(str){
+    let revString = "";
+    for(let i = str.length - 1; i >= 0; i--){
+        revString += str[i];
+    }
+    return revString;
+}
