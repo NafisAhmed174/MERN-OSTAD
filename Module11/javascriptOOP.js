@@ -111,9 +111,54 @@ console.log(person.lastName);
 */
 
 
+/*
+
+// inheritance
+
+class father{
+    addNumbers(a, b, c){
+        return a + b + c;
+    }
+}
+
+class son extends father{
+
+}
+
+
+sonObj = new son();
+
+console.log(sonObj.addNumbers(1, 2));
+
+
+// override
+
+class father{
+    addNumbers(a, b, c){
+        return a + b + c;
+    }
+}
+
+class son extends father{
+    addNumbers(a, b){
+        return a + b;
+    }
+}
+
+
+sonObj = new son();
+console.log(sonObj.addNumbers(1, 2));
+*/
 
 
 
 
 
+/*
+overloading(same name functions) does not exist in javascript
+*/
 
+
+/*
+abstraction(by this a class becomes unable to make objects) does not exist in javascript
+*/
