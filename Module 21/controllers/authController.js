@@ -11,3 +11,17 @@ exports.register = async (req, res) => {
         res.status(500).json({ error: 'Registration failed' });
     }
 };
+
+exports.login = async (req, res) => {
+    const { email, password } = req.body;
+    const student = await Student.findOne({ email });
+  
+    if (!student || !(await bcrypt.compare(password, student.password))) {
+        return res.status(400).json({ error: 'Invalid credentials' });
+    }
+  
+    const token = jwt.sign({ id: student._id }, 'your_jwt_secret', { expiresIn: '1h' });
+    res.cookie('token', token, { httpOnly: true });
+    res.status(200).json({ message: 'Login successful', token });
+  };
+  
